@@ -16,5 +16,17 @@ namespace LoginForm
 		{
 			InitializeComponent();
 		}
+
+		private void loginButton_Click(object sender, EventArgs e)
+		{
+			if (string.IsNullOrWhiteSpace(userNameInput.Text) || string.IsNullOrWhiteSpace(passwordInput.Text))
+			{
+				MessageBox.Show(
+					"Username and password are required",
+					String.Empty,
+					MessageBoxButtons.OK,
+					MessageBoxIcon.Error);
+			}
+		}
 	}
 }

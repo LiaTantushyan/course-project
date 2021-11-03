@@ -58,6 +58,7 @@ namespace LoginForm
 			this.loginButton.TabIndex = 2;
 			this.loginButton.Text = "Log In";
 			this.loginButton.UseVisualStyleBackColor = true;
+			this.loginButton.Click += new System.EventHandler(this.loginButton_Click);
 			// 
 			// label1
 			// 

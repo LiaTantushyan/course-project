@@ -6,4 +6,8 @@
     <UseWindowsForms>true</UseWindowsForms>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Helpers\Formatters\" />
+  </ItemGroup>
+
 </Project>
