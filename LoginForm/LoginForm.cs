@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using LoginForm.Helpers.CommonServices;
 
 namespace LoginForm
 {
@@ -17,15 +11,24 @@ namespace LoginForm
 			InitializeComponent();
 		}
 
-		private void loginButton_Click(object sender, EventArgs e)
+		private void OnLoginButtonClick(object sender, EventArgs e)
 		{
 			if (string.IsNullOrWhiteSpace(userNameInput.Text) || string.IsNullOrWhiteSpace(passwordInput.Text))
 			{
-				MessageBox.Show(
-					"Username and password are required",
-					String.Empty,
-					MessageBoxButtons.OK,
-					MessageBoxIcon.Error);
+				Messages.Warning("Invalid data", "Username and password are both required.");
+				return;
+			}
+
+			var isAuthorized = UserValidator.Authorize(userNameInput.Text, passwordInput.Text);
+			if (isAuthorized)
+			{
+				Messages.Information("Redirect to main program", "Please click OK to redirect to main program.");
+
+				loginButton.Enabled = false;
+				loginButton.Visible = false;
+
+				startAppButton.Enabled = true;
+				startAppButton.Visible = true;
 			}
 		}
 	}
