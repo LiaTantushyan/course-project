@@ -35,13 +35,14 @@ namespace LoginForm
 			this.label1 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
 			this.startAppButton = new System.Windows.Forms.Button();
+			this.tempData = new System.Windows.Forms.Label();
 			this.SuspendLayout();
 			// 
 			// userNameInput
 			// 
 			this.userNameInput.Location = new System.Drawing.Point(56, 70);
 			this.userNameInput.Name = "userNameInput";
-			this.userNameInput.Size = new System.Drawing.Size(200, 24);
+			this.userNameInput.Size = new System.Drawing.Size(200, 23);
 			this.userNameInput.TabIndex = 0;
 			// 
 			// passwordInput
@@ -49,7 +50,7 @@ namespace LoginForm
 			this.passwordInput.Location = new System.Drawing.Point(56, 116);
 			this.passwordInput.Name = "passwordInput";
 			this.passwordInput.PasswordChar = '•';
-			this.passwordInput.Size = new System.Drawing.Size(200, 24);
+			this.passwordInput.Size = new System.Drawing.Size(200, 23);
 			this.passwordInput.TabIndex = 1;
 			// 
 			// loginButton
@@ -93,11 +94,20 @@ namespace LoginForm
 			this.startAppButton.UseVisualStyleBackColor = true;
 			this.startAppButton.Visible = false;
 			// 
+			// tempData
+			// 
+			this.tempData.AutoSize = true;
+			this.tempData.Location = new System.Drawing.Point(114, 21);
+			this.tempData.Name = "tempData";
+			this.tempData.Size = new System.Drawing.Size(0, 15);
+			this.tempData.TabIndex = 6;
+			// 
 			// LoginForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(312, 229);
+			this.Controls.Add(this.tempData);
 			this.Controls.Add(this.startAppButton);
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.label1);
@@ -111,7 +121,6 @@ namespace LoginForm
 			this.Text = "Login";
 			this.ResumeLayout(false);
 			this.PerformLayout();
-
 		}
 
 		#endregion
@@ -122,6 +131,7 @@ namespace LoginForm
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.Button startAppButton;
+		private System.Windows.Forms.Label tempData;
 	}
 }
 

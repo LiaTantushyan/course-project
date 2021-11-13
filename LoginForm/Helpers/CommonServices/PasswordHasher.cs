@@ -5,7 +5,7 @@ namespace LoginForm.Helpers.CommonServices
 {
 	public static class PasswordHasher
 	{
-		public static string ComputeHash(string rawData)
+		public static string Hash(this string rawData)
 		{
 			using (SHA256 sha256 = SHA256.Create())
 			{

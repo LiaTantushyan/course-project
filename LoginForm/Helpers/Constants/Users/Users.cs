@@ -5,17 +5,17 @@ namespace LoginForm.Helpers.Constants.Users
 {
 	public static class Users
 	{
-		public static readonly List<User> RegisteredUsers = new List<User>();
+		public static readonly List<UserModel> RegisteredUsers = new List<UserModel>();
 
 		static Users()
 		{
-			RegisteredUsers.Add(new User
+			RegisteredUsers.Add(new UserModel
 			{
 				Username = Usernames.user1, 
 				Password = Passwords.user1Password
 			});
 
-			RegisteredUsers.Add(new User
+			RegisteredUsers.Add(new UserModel
 			{
 				Username = Usernames.user2,
 				Password = Passwords.user2Password

@@ -7,12 +7,11 @@ namespace LoginForm.Helpers.CommonServices
 	{
 		public static bool Authorize(string username, string password)
 		{
-			var user = new User
+			var user = new UserModel
 			{
 				Username = username,
-				Password = password
+				Password = password.Hash()
 			};
-			user.Password = PasswordHasher.ComputeHash(user.Password);
 
 			if (user.IsRegistered())
 			{
@@ -24,7 +23,7 @@ namespace LoginForm.Helpers.CommonServices
 			return false;
 		}
 
-		private static bool IsRegistered(this User user)
+		private static bool IsRegistered(this UserModel user)
 		{
 			return Users.RegisteredUsers.Exists(i => i.Username == user.Username && i.Password == user.Password);
 		}
