@@ -22,14 +22,13 @@ namespace LoginForm
 			var isAuthorized = UserValidator.Authorize(userNameInput.Text, passwordInput.Text);
 			if (isAuthorized)
 			{
-				Messages.Information("Redirect to main program", "Please click OK to redirect to main program.");
-
-				loginButton.Enabled = false;
-				loginButton.Visible = false;
-
-				startAppButton.Enabled = true;
-				startAppButton.Visible = true;
+				Program.CloseCurrentAndOpenNext(this, new MainForm());
 			}
 		}
-	}
+
+        private void cancelButton_Click(object sender, EventArgs e)
+        {
+			this.Close();
+        }
+    }
 }

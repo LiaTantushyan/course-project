@@ -15,7 +15,6 @@ namespace LoginForm.Helpers.CommonServices
 
 			if (user.IsRegistered())
 			{
-				Messages.Information("Login succeeded!", $"Login and authorization was succeeded for user '{user.Username}'!");
 				return true;
 			}
 

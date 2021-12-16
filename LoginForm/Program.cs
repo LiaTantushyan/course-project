@@ -17,7 +17,14 @@ namespace LoginForm
 			Application.SetHighDpiMode(HighDpiMode.SystemAware);
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new LoginForm());
+			Application.Run(new NameSurnameForm());
+		}
+
+		public static void CloseCurrentAndOpenNext(Form current, Form next)
+        {
+			current.Hide();
+			next.FormClosed += (s, args) => current.Close();
+			next.Show();
 		}
 	}
 }
