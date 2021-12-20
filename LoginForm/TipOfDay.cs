@@ -14,24 +14,25 @@ namespace LoginForm
 
         private void TipOfDay_Load(object sender, EventArgs e)
         {
-            string str = Resources.Tip1.Tip_1;
-
-            tipOfDay1.Text = str;
+            tipOfDay1.Text = Resources.Tips.TipOfDay1;
         }
 
         private void nextTip_Click(object sender, EventArgs e)
         {
-            tipOfDay1.Text = string.Empty;
-            string str = Resources.Tip2.Tip_2;
-            tipOfDay1.Text = str;
+            if (tipOfDay1.Text == Resources.Tips.TipOfDay1)
+            {
+                tipOfDay1.Text = Resources.Tips.TipOfDay2;
+            }
+            else
+            {
+                tipOfDay1.Text = Resources.Tips.TipOfDay1;
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
-
-            string str = Resources.Tip1.Tip_1;
-            tipOfDay1.Text = str;
+            tipOfDay1.Text = Resources.Tips.TipOfDay1;
         }
     }
 }

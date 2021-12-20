@@ -64,7 +64,7 @@ namespace LoginForm.Resources {
         ///   Looks up a localized string similar to Ըստ խնդրի պահանջի մենք ունենք մատրիցի 1/4 մասը,
         ///մնացած մասերը անհրաժեշտ է ստանալ հայելային տարբերակով։
         ///Խնդրի պատուհան տեղափոխվելու համար սեղմիր Go to the task
-        ///կոոճակը։.
+        ///կոոճակը։..
         /// </summary>
         internal static string HelpText {
             get {

@@ -117,11 +117,27 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="String1" xml:space="preserve">
-    <value />
+  <data name="TipOfDay1" xml:space="preserve">
+    <value>Խոյ`  21.03 – 20.04
+Խուսափեք կոնֆլիտներից: Մի կողմ քաշվեք, վեճերի մեջ մի մտեք:
+Վերահսկեք ձեր էմոցիաներն ու սադրանքների մի տրվեք:
+Ցուլ`  21.04 – 20.05
+Խիզախ առաջ անցեք, համառություն ցուցաբերեք ու պահանջկոտություն:
+Դա արեք, այդ թվում, նաև անձնական հարաբերություններում:
+Դուք ճիշտ ուղու վրա եք ու անպայման հաջողության կհասնեք:</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Tip_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\net5.0-windows\Textfile\Tip 1.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  <data name="TipOfDay2" xml:space="preserve">
+    <value>Այծեղջյուր` 22.12 – 20.01
+Ամենադժվար պահերին աջակցություն գտեք ընտանիքում:
+Ամենաուրախ պահերին մտերիմների հետ կիսեք ձեր ուրախությունը:
+Ընտանիքն ու տունը ձեր թիկունքն ու հիմքն են:
+Ջրհոս`  21.01 – 18.02
+Այդքան սենտիմենտալ մի եղեք:
+Ձեզնից սպասում են լուրջ ու պատասխանատու արարքներ:
+Արդյունքը միայն ձեզնից է կախված: Գործեք կամ մի բողոքեք այն բանից,
+ որ դուք ոչինչ չունեք:
+Ձկներ` 19.02 – 20.03
+Ձեր բարությանն անպաման բարությամբ կպատասխանեն:
+Ամեն դեպքում արեք այն, ինչ ձեզ ձեր սիրտն է թելադրում:.</value>
   </data>
 </root>

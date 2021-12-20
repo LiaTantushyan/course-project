@@ -22,24 +22,24 @@ namespace LoginForm.Resources {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Tip1 {
+    public class Tips {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Tip1() {
+        internal Tips() {
         }
         
         /// <summary>
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("LoginForm.Resources.Tip1", typeof(Tip1).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("LoginForm.Resources.Tip1", typeof(Tips).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -51,7 +51,7 @@ namespace LoginForm.Resources {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -61,28 +61,37 @@ namespace LoginForm.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
-        /// </summary>
-        internal static string String1 {
-            get {
-                return ResourceManager.GetString("String1", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Խոյ`  21.03 – 20.04
         ///Խուսափեք կոնֆլիտներից: Մի կողմ քաշվեք, վեճերի մեջ մի մտեք:
         ///Վերահսկեք ձեր էմոցիաներն ու սադրանքների մի տրվեք:
         ///Ցուլ`  21.04 – 20.05
-        ///Խիզախ առաջ անցեք, համառություն ցուցաբերեք ու պահանջկոտություն: 
+        ///Խիզախ առաջ անցեք, համառություն ցուցաբերեք ու պահանջկոտություն:
         ///Դա արեք, այդ թվում, նաև անձնական հարաբերություններում:
-        ///Դուք ճիշտ ուղու վրա եք ու անպայման հաջողության կհասնեք:
-        ///
-        ///.
+        ///Դուք ճիշտ ուղու վրա եք ու անպայման հաջողության կհասնեք:.
         /// </summary>
-        internal static string Tip_1 {
+        public static string TipOfDay1 {
             get {
-                return ResourceManager.GetString("Tip_1", resourceCulture);
+                return ResourceManager.GetString("TipOfDay1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Այծեղջյուր` 22.12 – 20.01
+        ///Ամենադժվար պահերին աջակցություն գտեք ընտանիքում:
+        ///Ամենաուրախ պահերին մտերիմների հետ կիսեք ձեր ուրախությունը:
+        ///Ընտանիքն ու տունը ձեր թիկունքն ու հիմքն են:
+        ///Ջրհոս`  21.01 – 18.02
+        ///Այդքան սենտիմենտալ մի եղեք:
+        ///Ձեզնից սպասում են լուրջ ու պատասխանատու արարքներ:
+        ///Արդյունքը միայն ձեզնից է կախված: Գործեք կամ մի բողոքեք այն բանից,
+        /// որ դուք ոչինչ չունեք:
+        ///Ձկներ` 19.02 – 20.03
+        ///Ձեր բարությանն անպաման բարությամբ կպատասխանեն:
+        ///Ամեն դեպքում արեք այն, ինչ ձեզ ձեր սիրտն է թելադրում:..
+        /// </summary>
+        public static string TipOfDay2 {
+            get {
+                return ResourceManager.GetString("TipOfDay2", resourceCulture);
             }
         }
     }
